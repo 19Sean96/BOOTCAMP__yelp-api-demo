@@ -46,7 +46,7 @@ $(function() {
         $(".nav-container").toggleClass("full-circle");
     });
 
-    $('.reactions').click(function (e) { 
+    $('.reactions').click(function (e) {
         e.preventDefault();
         if ($(this).data('clicked') === false) {
             const emojiName = $(this).attr("id");
@@ -103,9 +103,8 @@ $(function() {
             prevEl: ".swiper-button-prev"
         }
     });
-
+    
     // HANDLE SUBMITTING LOCATION DATA EVENT
-
     $(".search__form").on("submit", function(e) {
         e.preventDefault();
         localStorage.setItem("area", $("#location").val().trim());
@@ -116,7 +115,7 @@ $(function() {
         );
     });
 
-    $('.arrow-btn').click(function (e) { 
+    $('.arrow-btn').click(function (e) {
         e.preventDefault();
         let btn = $(this);
 
